@@ -1,0 +1,6 @@
+framework module Pods_Viper_TMDBMovieAPI_Viper_TMDBMovieAPIUITests {
+  umbrella header "Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

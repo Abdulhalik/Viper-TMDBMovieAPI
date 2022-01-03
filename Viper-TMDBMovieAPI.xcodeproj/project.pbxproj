@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		312541103DDD82AE8A59FAE4 /* Pods_Viper_TMDBMovieAPI_Viper_TMDBMovieAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCA24BBFE60B5E2D49C313 /* Pods_Viper_TMDBMovieAPI_Viper_TMDBMovieAPIUITests.framework */; };
+		3E931DEBE7C8FFF0F502261D /* Pods_Viper_TMDBMovieAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202E8C7140BAAF70655424AD /* Pods_Viper_TMDBMovieAPI.framework */; };
+		89420B94273EAF65001C4978 /* MovieListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89420B93273EAF65001C4978 /* MovieListCell.xib */; };
+		89420B96273EB0F7001C4978 /* MovieListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89420B95273EB0F7001C4978 /* MovieListCellView.swift */; };
+		89420BA0273ECA49001C4978 /* MovieDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89420B9F273ECA49001C4978 /* MovieDetailBuilder.swift */; };
+		89420BA2273ECA89001C4978 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89420BA1273ECA89001C4978 /* MovieDetailViewController.swift */; };
+		89420BA4273ECA9A001C4978 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89420BA3273ECA99001C4978 /* MovieDetailPresenter.swift */; };
+		895EA0E72765013B002BF54A /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895EA0E62765013B002BF54A /* Factory.swift */; };
+		8988E85D273BBF8F0056513B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E85C273BBF8F0056513B /* AppDelegate.swift */; };
+		8988E85F273BBF8F0056513B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E85E273BBF8F0056513B /* SceneDelegate.swift */; };
+		8988E866273BBF910056513B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8988E865273BBF910056513B /* Assets.xcassets */; };
+		8988E869273BBF910056513B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8988E867273BBF910056513B /* LaunchScreen.storyboard */; };
+		8988E874273BBF910056513B /* Viper_TMDBMovieAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E873273BBF910056513B /* Viper_TMDBMovieAPITests.swift */; };
+		8988E87E273BBF910056513B /* Viper_TMDBMovieAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E87D273BBF910056513B /* Viper_TMDBMovieAPIUITests.swift */; };
+		8988E880273BBF910056513B /* Viper_TMDBMovieAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E87F273BBF910056513B /* Viper_TMDBMovieAPIUITestsLaunchTests.swift */; };
+		8988E88E273BBFC90056513B /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E88D273BBFC90056513B /* MovieEntity.swift */; };
+		8988E893273BC38F0056513B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E892273BC38F0056513B /* Constants.swift */; };
+		8988E895273BC3BE0056513B /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E894273BC3BE0056513B /* MovieListInteractor.swift */; };
+		8988E89A273BD4240056513B /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E899273BD4240056513B /* Decoders.swift */; };
+		8988E89C273BD4FD0056513B /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E89B273BD4FD0056513B /* MoviesService.swift */; };
+		8988E8A0273BE32E0056513B /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E89F273BE32E0056513B /* MovieListPresenter.swift */; };
+		8988E8A2273BE3D40056513B /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E8A1273BE3D40056513B /* MovieListViewController.swift */; };
+		8988E8A4273BE60D0056513B /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E8A3273BE60D0056513B /* MovieListRouter.swift */; };
+		8988E8A6273BEAA20056513B /* MovieListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988E8A5273BEAA20056513B /* MovieListBuilder.swift */; };
+		8988E8A8273BFC1C0056513B /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8988E8A7273BFC1C0056513B /* MovieList.storyboard */; };
+		89C51A9E2760A95400F5AA48 /* MovieDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C51A9D2760A95300F5AA48 /* MovieDetail.storyboard */; };
+		E553395C64D6127F656A976E /* Pods_Viper_TMDBMovieAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4411FF53FB232AD8245A8BD4 /* Pods_Viper_TMDBMovieAPITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8988E870273BBF910056513B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8988E851273BBF8F0056513B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8988E858273BBF8F0056513B;
+			remoteInfo = "Viper-TMDBMovieAPI";
+		};
+		8988E87A273BBF910056513B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8988E851273BBF8F0056513B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8988E858273BBF8F0056513B;
+			remoteInfo = "Viper-TMDBMovieAPI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		202E8C7140BAAF70655424AD /* Pods_Viper_TMDBMovieAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_TMDBMovieAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED96B58665174B09A819A15 /* Pods-Viper-TMDBMovieAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-TMDBMovieAPITests.debug.xcconfig"; path = "Target Support Files/Pods-Viper-TMDBMovieAPITests/Pods-Viper-TMDBMovieAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AE11B5A715B2065D94991AD /* Pods-Viper-TMDBMovieAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-TMDBMovieAPI.release.xcconfig"; path = "Target Support Files/Pods-Viper-TMDBMovieAPI/Pods-Viper-TMDBMovieAPI.release.xcconfig"; sourceTree = "<group>"; };
+		4411FF53FB232AD8245A8BD4 /* Pods_Viper_TMDBMovieAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_TMDBMovieAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6494592684130B385FC61AFD /* Pods-Viper-TMDBMovieAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-TMDBMovieAPITests.release.xcconfig"; path = "Target Support Files/Pods-Viper-TMDBMovieAPITests/Pods-Viper-TMDBMovieAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		71813ABDD5A90D27A5D25A29 /* Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89420B93273EAF65001C4978 /* MovieListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListCell.xib; sourceTree = "<group>"; };
+		89420B95273EB0F7001C4978 /* MovieListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCellView.swift; sourceTree = "<group>"; };
+		89420B9F273ECA49001C4978 /* MovieDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailBuilder.swift; sourceTree = "<group>"; };
+		89420BA1273ECA89001C4978 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		89420BA3273ECA99001C4978 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		895EA0E62765013B002BF54A /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		8988E859273BBF8F0056513B /* Viper-TMDBMovieAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper-TMDBMovieAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8988E85C273BBF8F0056513B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8988E85E273BBF8F0056513B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8988E865273BBF910056513B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8988E868273BBF910056513B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8988E86A273BBF910056513B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8988E86F273BBF910056513B /* Viper-TMDBMovieAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viper-TMDBMovieAPITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8988E873273BBF910056513B /* Viper_TMDBMovieAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_TMDBMovieAPITests.swift; sourceTree = "<group>"; };
+		8988E879273BBF910056513B /* Viper-TMDBMovieAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viper-TMDBMovieAPIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8988E87D273BBF910056513B /* Viper_TMDBMovieAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_TMDBMovieAPIUITests.swift; sourceTree = "<group>"; };
+		8988E87F273BBF910056513B /* Viper_TMDBMovieAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_TMDBMovieAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8988E88D273BBFC90056513B /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
+		8988E892273BC38F0056513B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8988E894273BC3BE0056513B /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
+		8988E899273BD4240056513B /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
+		8988E89B273BD4FD0056513B /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		8988E89F273BE32E0056513B /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		8988E8A1273BE3D40056513B /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		8988E8A3273BE60D0056513B /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
+		8988E8A5273BEAA20056513B /* MovieListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListBuilder.swift; sourceTree = "<group>"; };
+		8988E8A7273BFC1C0056513B /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
+		89C51A9D2760A95300F5AA48 /* MovieDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetail.storyboard; sourceTree = "<group>"; };
+		92BFB70E94D097A9E5E3DE8C /* Pods-Viper-TMDBMovieAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-TMDBMovieAPI.debug.xcconfig"; path = "Target Support Files/Pods-Viper-TMDBMovieAPI/Pods-Viper-TMDBMovieAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B8C2C79253B26143C76B74 /* Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3CCA24BBFE60B5E2D49C313 /* Pods_Viper_TMDBMovieAPI_Viper_TMDBMovieAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_TMDBMovieAPI_Viper_TMDBMovieAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8988E856273BBF8F0056513B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E931DEBE7C8FFF0F502261D /* Pods_Viper_TMDBMovieAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8988E86C273BBF910056513B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E553395C64D6127F656A976E /* Pods_Viper_TMDBMovieAPITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8988E876273BBF910056513B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312541103DDD82AE8A59FAE4 /* Pods_Viper_TMDBMovieAPI_Viper_TMDBMovieAPIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E8989ECCA38815BE1AB04DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92BFB70E94D097A9E5E3DE8C /* Pods-Viper-TMDBMovieAPI.debug.xcconfig */,
+				3AE11B5A715B2065D94991AD /* Pods-Viper-TMDBMovieAPI.release.xcconfig */,
+				71813ABDD5A90D27A5D25A29 /* Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.debug.xcconfig */,
+				B3B8C2C79253B26143C76B74 /* Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.release.xcconfig */,
+				2ED96B58665174B09A819A15 /* Pods-Viper-TMDBMovieAPITests.debug.xcconfig */,
+				6494592684130B385FC61AFD /* Pods-Viper-TMDBMovieAPITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89420B92273EAF37001C4978 /* _Components */ = {
+			isa = PBXGroup;
+			children = (
+				89420B93273EAF65001C4978 /* MovieListCell.xib */,
+				89420B95273EB0F7001C4978 /* MovieListCellView.swift */,
+			);
+			path = _Components;
+			sourceTree = "<group>";
+		};
+		89420B9E273ECA2B001C4978 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				89420B9F273ECA49001C4978 /* MovieDetailBuilder.swift */,
+				89420BA1273ECA89001C4978 /* MovieDetailViewController.swift */,
+				89420BA3273ECA99001C4978 /* MovieDetailPresenter.swift */,
+				89C51A9D2760A95300F5AA48 /* MovieDetail.storyboard */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		8988E850273BBF8F0056513B = {
+			isa = PBXGroup;
+			children = (
+				8988E85B273BBF8F0056513B /* Viper-TMDBMovieAPI */,
+				8988E872273BBF910056513B /* Viper-TMDBMovieAPITests */,
+				8988E87C273BBF910056513B /* Viper-TMDBMovieAPIUITests */,
+				8988E85A273BBF8F0056513B /* Products */,
+				4E8989ECCA38815BE1AB04DF /* Pods */,
+				C4EB2596D92B46F51980C647 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8988E85A273BBF8F0056513B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8988E859273BBF8F0056513B /* Viper-TMDBMovieAPI.app */,
+				8988E86F273BBF910056513B /* Viper-TMDBMovieAPITests.xctest */,
+				8988E879273BBF910056513B /* Viper-TMDBMovieAPIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8988E85B273BBF8F0056513B /* Viper-TMDBMovieAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8988E898273BD4110056513B /* Helpers */,
+				8988E88F273BC0630056513B /* Services */,
+				8988E88C273BBFA30056513B /* MovieList */,
+				89420B9E273ECA2B001C4978 /* MovieDetail */,
+				8988E85C273BBF8F0056513B /* AppDelegate.swift */,
+				8988E85E273BBF8F0056513B /* SceneDelegate.swift */,
+				8988E865273BBF910056513B /* Assets.xcassets */,
+				8988E867273BBF910056513B /* LaunchScreen.storyboard */,
+				8988E86A273BBF910056513B /* Info.plist */,
+				8988E892273BC38F0056513B /* Constants.swift */,
+			);
+			path = "Viper-TMDBMovieAPI";
+			sourceTree = "<group>";
+		};
+		8988E872273BBF910056513B /* Viper-TMDBMovieAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				8988E873273BBF910056513B /* Viper_TMDBMovieAPITests.swift */,
+			);
+			path = "Viper-TMDBMovieAPITests";
+			sourceTree = "<group>";
+		};
+		8988E87C273BBF910056513B /* Viper-TMDBMovieAPIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8988E87D273BBF910056513B /* Viper_TMDBMovieAPIUITests.swift */,
+				8988E87F273BBF910056513B /* Viper_TMDBMovieAPIUITestsLaunchTests.swift */,
+			);
+			path = "Viper-TMDBMovieAPIUITests";
+			sourceTree = "<group>";
+		};
+		8988E88C273BBFA30056513B /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				89420B92273EAF37001C4978 /* _Components */,
+				8988E88D273BBFC90056513B /* MovieEntity.swift */,
+				8988E894273BC3BE0056513B /* MovieListInteractor.swift */,
+				8988E89F273BE32E0056513B /* MovieListPresenter.swift */,
+				8988E8A1273BE3D40056513B /* MovieListViewController.swift */,
+				8988E8A3273BE60D0056513B /* MovieListRouter.swift */,
+				8988E8A5273BEAA20056513B /* MovieListBuilder.swift */,
+				8988E8A7273BFC1C0056513B /* MovieList.storyboard */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		8988E88F273BC0630056513B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8988E89B273BD4FD0056513B /* MoviesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8988E898273BD4110056513B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8988E899273BD4240056513B /* Decoders.swift */,
+				895EA0E62765013B002BF54A /* Factory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C4EB2596D92B46F51980C647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				202E8C7140BAAF70655424AD /* Pods_Viper_TMDBMovieAPI.framework */,
+				B3CCA24BBFE60B5E2D49C313 /* Pods_Viper_TMDBMovieAPI_Viper_TMDBMovieAPIUITests.framework */,
+				4411FF53FB232AD8245A8BD4 /* Pods_Viper_TMDBMovieAPITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8988E858273BBF8F0056513B /* Viper-TMDBMovieAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8988E883273BBF910056513B /* Build configuration list for PBXNativeTarget "Viper-TMDBMovieAPI" */;
+			buildPhases = (
+				051EB5FF94FB75DBA89286CF /* [CP] Check Pods Manifest.lock */,
+				8988E855273BBF8F0056513B /* Sources */,
+				8988E856273BBF8F0056513B /* Frameworks */,
+				8988E857273BBF8F0056513B /* Resources */,
+				95E7229F315EF9D3101A8442 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viper-TMDBMovieAPI";
+			productName = "Viper-TMDBMovieAPI";
+			productReference = 8988E859273BBF8F0056513B /* Viper-TMDBMovieAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8988E86E273BBF910056513B /* Viper-TMDBMovieAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8988E886273BBF910056513B /* Build configuration list for PBXNativeTarget "Viper-TMDBMovieAPITests" */;
+			buildPhases = (
+				B1387640ABF7A8A38B6AE375 /* [CP] Check Pods Manifest.lock */,
+				8988E86B273BBF910056513B /* Sources */,
+				8988E86C273BBF910056513B /* Frameworks */,
+				8988E86D273BBF910056513B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8988E871273BBF910056513B /* PBXTargetDependency */,
+			);
+			name = "Viper-TMDBMovieAPITests";
+			productName = "Viper-TMDBMovieAPITests";
+			productReference = 8988E86F273BBF910056513B /* Viper-TMDBMovieAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8988E878273BBF910056513B /* Viper-TMDBMovieAPIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8988E889273BBF910056513B /* Build configuration list for PBXNativeTarget "Viper-TMDBMovieAPIUITests" */;
+			buildPhases = (
+				60D710BB1C55F0B93E1AC719 /* [CP] Check Pods Manifest.lock */,
+				8988E875273BBF910056513B /* Sources */,
+				8988E876273BBF910056513B /* Frameworks */,
+				8988E877273BBF910056513B /* Resources */,
+				23DF15D9661BBF1041D82826 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8988E87B273BBF910056513B /* PBXTargetDependency */,
+			);
+			name = "Viper-TMDBMovieAPIUITests";
+			productName = "Viper-TMDBMovieAPIUITests";
+			productReference = 8988E879273BBF910056513B /* Viper-TMDBMovieAPIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8988E851273BBF8F0056513B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8988E858273BBF8F0056513B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					8988E86E273BBF910056513B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8988E858273BBF8F0056513B;
+					};
+					8988E878273BBF910056513B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8988E858273BBF8F0056513B;
+					};
+				};
+			};
+			buildConfigurationList = 8988E854273BBF8F0056513B /* Build configuration list for PBXProject "Viper-TMDBMovieAPI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8988E850273BBF8F0056513B;
+			productRefGroup = 8988E85A273BBF8F0056513B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8988E858273BBF8F0056513B /* Viper-TMDBMovieAPI */,
+				8988E86E273BBF910056513B /* Viper-TMDBMovieAPITests */,
+				8988E878273BBF910056513B /* Viper-TMDBMovieAPIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8988E857273BBF8F0056513B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C51A9E2760A95400F5AA48 /* MovieDetail.storyboard in Resources */,
+				8988E8A8273BFC1C0056513B /* MovieList.storyboard in Resources */,
+				8988E869273BBF910056513B /* LaunchScreen.storyboard in Resources */,
+				89420B94273EAF65001C4978 /* MovieListCell.xib in Resources */,
+				8988E866273BBF910056513B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8988E86D273BBF910056513B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8988E877273BBF910056513B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051EB5FF94FB75DBA89286CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper-TMDBMovieAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23DF15D9661BBF1041D82826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60D710BB1C55F0B93E1AC719 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95E7229F315EF9D3101A8442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viper-TMDBMovieAPI/Pods-Viper-TMDBMovieAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viper-TMDBMovieAPI/Pods-Viper-TMDBMovieAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viper-TMDBMovieAPI/Pods-Viper-TMDBMovieAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1387640ABF7A8A38B6AE375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper-TMDBMovieAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8988E855273BBF8F0056513B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				895EA0E72765013B002BF54A /* Factory.swift in Sources */,
+				89420BA0273ECA49001C4978 /* MovieDetailBuilder.swift in Sources */,
+				8988E8A2273BE3D40056513B /* MovieListViewController.swift in Sources */,
+				89420B96273EB0F7001C4978 /* MovieListCellView.swift in Sources */,
+				8988E8A0273BE32E0056513B /* MovieListPresenter.swift in Sources */,
+				89420BA2273ECA89001C4978 /* MovieDetailViewController.swift in Sources */,
+				8988E8A4273BE60D0056513B /* MovieListRouter.swift in Sources */,
+				8988E8A6273BEAA20056513B /* MovieListBuilder.swift in Sources */,
+				8988E895273BC3BE0056513B /* MovieListInteractor.swift in Sources */,
+				8988E89C273BD4FD0056513B /* MoviesService.swift in Sources */,
+				89420BA4273ECA9A001C4978 /* MovieDetailPresenter.swift in Sources */,
+				8988E88E273BBFC90056513B /* MovieEntity.swift in Sources */,
+				8988E89A273BD4240056513B /* Decoders.swift in Sources */,
+				8988E85D273BBF8F0056513B /* AppDelegate.swift in Sources */,
+				8988E85F273BBF8F0056513B /* SceneDelegate.swift in Sources */,
+				8988E893273BC38F0056513B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8988E86B273BBF910056513B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8988E874273BBF910056513B /* Viper_TMDBMovieAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8988E875273BBF910056513B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8988E880273BBF910056513B /* Viper_TMDBMovieAPIUITestsLaunchTests.swift in Sources */,
+				8988E87E273BBF910056513B /* Viper_TMDBMovieAPIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8988E871273BBF910056513B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8988E858273BBF8F0056513B /* Viper-TMDBMovieAPI */;
+			targetProxy = 8988E870273BBF910056513B /* PBXContainerItemProxy */;
+		};
+		8988E87B273BBF910056513B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8988E858273BBF8F0056513B /* Viper-TMDBMovieAPI */;
+			targetProxy = 8988E87A273BBF910056513B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8988E867273BBF910056513B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8988E868273BBF910056513B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8988E881273BBF910056513B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8988E882273BBF910056513B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8988E884273BBF910056513B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BFB70E94D097A9E5E3DE8C /* Pods-Viper-TMDBMovieAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QJBJ737X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Viper-TMDBMovieAPI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdulhalik.Viper-TMDBMovieAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8988E885273BBF910056513B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AE11B5A715B2065D94991AD /* Pods-Viper-TMDBMovieAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QJBJ737X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Viper-TMDBMovieAPI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdulhalik.Viper-TMDBMovieAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8988E887273BBF910056513B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED96B58665174B09A819A15 /* Pods-Viper-TMDBMovieAPITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H4BADHB5J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdulhalikhuawei.Viper-TMDBMovieAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper-TMDBMovieAPI.app/Viper-TMDBMovieAPI";
+			};
+			name = Debug;
+		};
+		8988E888273BBF910056513B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6494592684130B385FC61AFD /* Pods-Viper-TMDBMovieAPITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H4BADHB5J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdulhalikhuawei.Viper-TMDBMovieAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper-TMDBMovieAPI.app/Viper-TMDBMovieAPI";
+			};
+			name = Release;
+		};
+		8988E88A273BBF910056513B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71813ABDD5A90D27A5D25A29 /* Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H4BADHB5J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdulhalikhuawei.Viper-TMDBMovieAPIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Viper-TMDBMovieAPI";
+			};
+			name = Debug;
+		};
+		8988E88B273BBF910056513B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B8C2C79253B26143C76B74 /* Pods-Viper-TMDBMovieAPI-Viper-TMDBMovieAPIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H4BADHB5J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdulhalikhuawei.Viper-TMDBMovieAPIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Viper-TMDBMovieAPI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8988E854273BBF8F0056513B /* Build configuration list for PBXProject "Viper-TMDBMovieAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8988E881273BBF910056513B /* Debug */,
+				8988E882273BBF910056513B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8988E883273BBF910056513B /* Build configuration list for PBXNativeTarget "Viper-TMDBMovieAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8988E884273BBF910056513B /* Debug */,
+				8988E885273BBF910056513B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8988E886273BBF910056513B /* Build configuration list for PBXNativeTarget "Viper-TMDBMovieAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8988E887273BBF910056513B /* Debug */,
+				8988E888273BBF910056513B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8988E889273BBF910056513B /* Build configuration list for PBXNativeTarget "Viper-TMDBMovieAPIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8988E88A273BBF910056513B /* Debug */,
+				8988E88B273BBF910056513B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8988E851273BBF8F0056513B /* Project object */;
+}
